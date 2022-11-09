@@ -1,0 +1,7 @@
+﻿[*.cs]
+
+# IDE0011: Add braces
+csharp_prefer_braces = true
+
+# IDE0046: Convert to conditional expression
+dotnet_style_prefer_conditional_expression_over_return = false
