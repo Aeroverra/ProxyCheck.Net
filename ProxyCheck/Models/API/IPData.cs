@@ -1,11 +1,18 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace ProxyCheck.Models.API
 {
-    internal class IPData : IResponseData
+    public class IPData : IResponseData
     {
+        /// <summary>
+        /// Contains the ip
+        /// Specific to this library to avoid dictionary use
+        /// </summary>
+        [JsonIgnore]
+        public string IP { get; set; }
         public string Asn { get; set; }
         public string Provider { get; set; }
         public string Continent { get; set; }
@@ -14,7 +21,7 @@ namespace ProxyCheck.Models.API
         public decimal? Latitude { get; set; }
         public decimal? Longitude { get; set; }
         public string Isocode { get; set; }
-        public bool Proxy { get; set; }
+        public bool? Proxy { get; set; }
         public string Type { get; set; }
         public long? Risk { get; set; }
         public string City { get; set; }

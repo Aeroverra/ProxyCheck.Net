@@ -16,6 +16,7 @@ namespace ProxyCheck.JsonConverters
 
         public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
         {
+
             var value = (string)reader.Value;
             if ("yes".Equals(value, StringComparison.OrdinalIgnoreCase))
             {
@@ -30,7 +31,9 @@ namespace ProxyCheck.JsonConverters
 
         public override bool CanConvert(Type objectType)
         {
-            if (objectType == typeof(String) || objectType == typeof(Boolean))
+            if (objectType == typeof(String) 
+                || objectType == typeof(Boolean)
+                || objectType == typeof(Boolean?))
             {
                 return true;
             }

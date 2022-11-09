@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ProxyCheck.Models.API
 {
-    internal class Policies
+    public class Policies
     {
         public bool? AdFiltering { get; set; }
         public bool? FreeAccess { get; set; }

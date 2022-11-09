@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ProxyCheck.Models.API
 {
-    internal class AttackHistory
+    public class AttackHistory
     {
         public long? Total { get; set; }
         public long? VulnerabilityProbing { get; set; }

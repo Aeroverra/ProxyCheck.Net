@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ProxyCheck.Models.API
 {
-    internal class Operator
+    public class Operator
     {
         public string Name { get; set; }
         public Uri Url { get; set; }

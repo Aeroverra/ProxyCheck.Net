@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ProxyCheck.Models.API
 {
-    internal interface IResponseData
+    public interface IResponseData
     {
     }
 }
